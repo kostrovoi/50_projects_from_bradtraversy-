@@ -11,15 +11,15 @@ html {
 }
 
 body {
-  margin: 0;
-  background-color: azure;
+	background-color: azure;
   font-family: 'Roboto', sans-serif;
   display: flex;
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
