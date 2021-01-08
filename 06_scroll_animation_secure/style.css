@@ -38,12 +38,11 @@ body {
 	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 	transition: transform 0.4s ease;
 
-	transform: translateX(0);
+	transform: translateX(0); /* default starting value */
 }
 
 .box.unshown:nth-of-type(even) {
 	transform: translateX(-400%);
-
 }
 
 .box.unshown {
