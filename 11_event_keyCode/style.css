@@ -19,7 +19,8 @@ body {
   height: 100vh;
   overflow-x: hidden;
 	margin: 0;
-	text-align: center;
+
+	/* text-align: center; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,7 +66,7 @@ img {
 .key small {
 	position: absolute;
 	top: -24px;
-	width: 100%;
+	/* width: 100%; */
 	color: #555;
 	font-size: 18px;
 }
