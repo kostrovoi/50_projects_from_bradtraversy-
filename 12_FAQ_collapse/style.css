@@ -65,10 +65,17 @@ img {
 	padding: 30px;
 	position: relative;
 	overflow: hidden;
-	transition: 0.3s ease;
+	transition: 0.9s ease;
+}
+
+.active {
+	transition: 0.9s ease;
+
 }
 
 .faq.active {
+	transition: 0.9s ease;
+
 	background-color: #fff;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
@@ -84,6 +91,8 @@ img {
 	top: 20px;
 	left: 20px;
 	z-index: 0;
+
+	transition: 0.9s ease;
 }
 
 .faq.active::before {
@@ -100,10 +109,14 @@ img {
 .faq-text {
 	margin: 30px 0;
 	display: none;
+	transition: 0.9s ease;
+
 }
 
 .faq.active .faq-text {
 	display: block;
+	transition: 0.9s ease;
+
 }
 
 .faq-toggle {
