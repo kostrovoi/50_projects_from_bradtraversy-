@@ -97,15 +97,15 @@ img {
 	opacity: 0;
 	transition: font-size 0.3s ease, opacity 0.5s ease;
 	/* line-height: 0; */
-	/* transition: all 2s ease; */
+	/* transition: all 0.4s ease; */
 }
 
 .faq.active .faq-text {
 	font-size: inherit;
 	opacity: 1;
 	transition: font-size 0.3s ease, opacity 0.5s ease;
-	/* line-height: inherit; */
-	/* transition: all 2s ease; */
+	/* line-height: 100%; */
+	/* transition: all 0.4s ease; */
 }
 
 .faq-toggle {
