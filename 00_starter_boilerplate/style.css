@@ -2,6 +2,7 @@
 
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -9,6 +10,12 @@ html {
 *::after {
 	box-sizing: inherit;
 }
+
+/* @media (prefers-reduced-motion: reduce) {
+	html {
+			scroll-behavior: auto;
+	}
+} */
 
 body {
 	background-color: azure;

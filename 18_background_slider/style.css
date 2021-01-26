@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* @media (prefers-reduced-motion: reduce) {
+	html {
+			scroll-behavior: auto;
+	}
+} */
+
+body {
+  /* background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'); */
+  background-position: center center;
+  background-size: cover;
+  transition: 0.4s ease;
+
+  background-color: azure;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider-container {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: 70vh;
+  width: 70vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  top: -15vh;
+  left: -15vw;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+
+.arrow {
+	cursor: pointer;
+	color: #fff;
+  font-size: 30px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid orange;
+	/* z-index: 100; */
+	border-radius: 4px;
+}
+
+.arrow:focus {
+	outline: 0;
+}
+
+/* .arrow:active {
+	scale: 1.2;
+} */
+
+.left-arrow {
+  left: calc(15vw - 65px);
+}
+
+.right-arrow {
+  right: calc(15vw - 65px);
+}
