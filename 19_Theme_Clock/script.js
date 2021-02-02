@@ -3,7 +3,7 @@ const minuteEL = document.querySelector('.minute');
 const secondEL = document.querySelector('.second');
 const timeEL = document.querySelector('.time');
 let dateEL = document.querySelector('.date');
-let circleEL = document.querySelector('.circle');
+// let circleEL = document.querySelector('.circle');
 const toggle = document.querySelector('.toggle');
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
