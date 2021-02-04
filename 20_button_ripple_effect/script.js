@@ -6,8 +6,8 @@ rippleBtns.forEach(rippleBtn => {
     const y = e.clientY;
     // console.log(x, y);
 
-    const btnTop = e.target.offsetTop;
     const btnLeft = e.target.offsetLeft;
+    const btnTop = e.target.offsetTop;
     // console.log(btnTop, btnLeft);
 
     const xInside = x - btnLeft;
