@@ -18,7 +18,7 @@ body {
 
 :root {
 	--primary-color: #000;
-	--secondary-color: azure;
+	--secondary-color: #dbf792;
 }
 
 html.dark {
@@ -133,6 +133,7 @@ img {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	will-change: transform;
 }
 
 .center-point::after {
@@ -170,6 +171,7 @@ img {
 	/* vertical-align: middle; */
 	line-height: 18px;
 	font-size: 14px;
+	padding: 16px;
 	margin-bottom: 2px;
 	margin-left: 2px;
 	transition: all 0.5s ease-in;
