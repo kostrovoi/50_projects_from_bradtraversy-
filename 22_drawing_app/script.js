@@ -1,9 +1,15 @@
-console.log('hi');
-
 const canvas = document.getElementById('canvas');
+const decreaseBtn = document.getElementById('decrease');
+const sizeElem = document.getElementById('size');
+const increaseBtn = document.getElementById('increase');
+const colorElem = document.getElementById('color');
+const clearBtn = document.getElementById('clear');
+
+// console.log(increaseBtn);
+
 const ctx = canvas.getContext('2d');
 
-let size = 20;
+let size = 10;
 let isPressed = false;
 let color = 'black';
 let x;
@@ -15,7 +21,7 @@ canvas.addEventListener('mousedown', (e) => {
   x = e.offsetX;
   y = e.offsetY;
 
-  console.log(isPressed, x, y);
+  // console.log(isPressed, x, y);
 })
 
 canvas.addEventListener('mouseup', (e) => {
@@ -24,7 +30,7 @@ canvas.addEventListener('mouseup', (e) => {
   x = undefined;
   y = undefined;
 
-  console.log(isPressed, x, y);
+  // console.log(isPressed, x, y);
 })
 
 canvas.addEventListener('mousemove', (e) => {
@@ -59,3 +65,31 @@ function drawLine(x1, y1, x2, y2) {
 
 // drawCircle(100, 200);
 // drawLine(150, 150, 250, 300);
+
+colorElem.addEventListener('change', (e) => color = e.target.value);
+
+function updateSizeOnScreen() {
+  sizeElem.innerText = size
+};
+
+increaseBtn.addEventListener('click', () => {
+  size += 2;
+
+  if(size > 50) {
+    size = 50
+  }
+
+  updateSizeOnScreen()
+});
+
+decreaseBtn.addEventListener('click', () => {
+  size -= 2;
+
+  if(size <= 2) {
+    size = 2
+  }
+
+  updateSizeOnScreen()
+})
+
+clearBtn.addEventListener('click', () => ctx.clearRect(0, 0, canvas.width, canvas.height))

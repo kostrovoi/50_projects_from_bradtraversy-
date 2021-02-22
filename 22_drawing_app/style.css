@@ -11,12 +11,6 @@ html {
 	box-sizing: inherit;
 }
 
-/* @media (prefers-reduced-motion: reduce) {
-	html {
-			scroll-behavior: auto;
-	}
-} */
-
 body {
 	background-color: azure;
   font-family: 'Roboto', sans-serif;
