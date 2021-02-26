@@ -84,12 +84,21 @@ img {
   display: flex;
   flex-shrink: 0;
   flex-wrap: wrap;
+
+  width: 500px;
+  justify-content: space-evenly;
 }
+
+/* .nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 .nav ul a {
   cursor: pointer;
   padding: 6px;
-  margin: 0 12px;
+  /* margin: 0 12px; */
 }
 
 .nav.active {
