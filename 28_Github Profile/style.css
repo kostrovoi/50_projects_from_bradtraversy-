@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* @media (prefers-reduced-motion: reduce) {
+	html {
+			scroll-behavior: auto;
+	}
+} */
+
+body {
+  background-color: #2a2a72;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 16px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem 0.5rem;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.3rem;
+  /* margin: 2rem 0.5rem; */
+  font-family: inherit;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder {
+  color: #bbb;
+}
+
+.card {
+	max-width: 800px;
+	background-color: #4c2885;
+	padding: 1rem;
+	border-radius: 20px;
+	display: flex;
+  margin: 0.5rem;
+}
+
+.img-container {
+	flex-shrink: 0;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+.img-container .avatar {
+	border-radius: 50%;
+  border: 4px solid #2a2a72;
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  color: #eee;
+}
+
+.user-info h2 {
+  margin-bottom: 1rem;
+}
+
+.user-info ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 1rem 0;
+}
+
+.user-info ul li {
+  margin-right: 1rem;
+}
+
+.user-info ul li strong {
+  margin-left: 0.18rem;
+  font-size: 0.9rem;
+}
+
+.repo {
+  display: inline-block;
+  background-color: #2a2a72;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.8rem;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 0.5rem;
+  }
+  .user-info ul {
+    flex-direction: column;
+  }
+  .user-form input {
+    padding: 0.5rem;
+  }
+}
